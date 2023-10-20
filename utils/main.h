@@ -27,11 +27,19 @@ using namespace std;
 */
 
 int aufgabeZwei();
+int aufgabeDrei();
 
 class InvalidInputException : public exception {
 public:
     const char * what() const throw() {
         return "Invalid input";
+    }
+};
+
+class CannotOpenFileException : public exception {
+public:
+    const char * what() const throw() {
+        return "Cannot open file!";
     }
 };
 

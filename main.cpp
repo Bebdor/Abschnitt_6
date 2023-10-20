@@ -23,6 +23,9 @@ int main() {
         case 2:
             aufgabeZwei();
             break;
+        case 3:
+            aufgabeDrei();
+            break;
         default:
             throw InvalidInputException();
     }
